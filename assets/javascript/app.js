@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	//start button, search options array
-	var sfFilms = ["invasion of the body snatchers(1978)","la mission(2009)","princess diaries(2001)","bullitt(1968)","vertigo(1958)","dirty harry(1971)","the rock(1996)","ant man(2015)","the room(2003)","coherence(2013)"]
+	var sfFilms = ["pursuit of happiness","princess diaries","invasion of the body snatchers","bullitt","vertigo","dirty harry","the rock nicholas cage film","zodiac film","coherence film"]
 
 
 	/* on click of submit button, grab value from input and add input value to my array, called generate buttons for array after new item is added to the array */
@@ -34,18 +34,21 @@ $(document).ready(function(){
 	$(document).on("click", ".movie", function(){
 		$("#image-container").empty();
 
+		console.log("i clicked a button");
+
+
 		//clicked buttons attribute value
 		var movie = $(this).attr('data-name');
-		// console.log(movie)
+		console.log(movie)
 
-		//base url + clicked button attribute value and api key and other paramater
+		// //base url + clicked button attribute value and api key and other paramater
 		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=Lk15PiiU3gyFxD2FrKFM48Q367ab4QwK&limit=10";
-
+		console.log(queryURL)
 		$.ajax({
 		  url: queryURL,
 		  method: "GET"
 		}).then(function(response) {
-			// console.log(response)
+			console.log(response.data)
 
 			var arrayOfAllGifs = response.data;
 
@@ -86,6 +89,8 @@ $(document).ready(function(){
 	        $(this).attr("data-state", "still");
       	}
 	})
+
+	console.log(sfFilms)
 });
 
 
