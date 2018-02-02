@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	//start button, search options array
-	var sfFilms = ["pursuit of happiness","princess diaries","invasion of the body snatchers","bullitt","vertigo","dirty harry","the rock nicholas cage film","zodiac film","coherence film"]
+	var sfFilms = ["pursuit of happiness will smith","princess diaries","invasion of the body snatchers","bullitt","vertigo","dirty harry","the rock alcatraz film","zodiac film","coherence film"]
 
 
 	/* on click of submit button, grab value from input and add input value to my array, called generate buttons for array after new item is added to the array */
