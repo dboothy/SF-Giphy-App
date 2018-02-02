@@ -27,11 +27,26 @@ img{
 body{
 background-color: #ffa500;
 color: black; 
+background-image: url("../images/skyline.png");
+background-repeat: no-repeat;
+background-position: right bottom;
 }
 
 .heading{
 	text-align: center;
+	font-family: 'Racing Sans One', cursive;
 
 }
 
-button.movie{}
+button.movie{
+
+color: #00FF04
+
+}
+
+.jumbotron{
+	background-color: #008C8F
+}
+
+
+

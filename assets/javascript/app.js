@@ -25,6 +25,8 @@ $(document).ready(function(){
 	/* button assigned  */
 		    filmBtn.addClass("movie");
 	/* assigns class of 'movie' assigned */
+		    filmBtn.addClass("btn btn-lg btn-success")
+	// 
 		    filmBtn.attr("data-name",sfFilms[i])
 	/* assigns attribute 'data-name' and iterates through array to provide according names to buttons  */
 		    filmBtn.text(sfFilms[i]);
