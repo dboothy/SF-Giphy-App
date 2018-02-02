@@ -87,6 +87,8 @@ $(document).ready(function(){
 			image.attr("data-still", arr[i].images.fixed_width_still.url )
 	// create a p tag for text		
 			var myRating = $("<p>");
+
+			myRating.addClass("label label-info")
 	// add text to html including the data from response that holds the rating
 			myRating.text("Rating: " + arr[i].rating);
 	// append response image holder and rating holder to the dom
