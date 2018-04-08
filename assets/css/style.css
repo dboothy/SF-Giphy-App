@@ -7,6 +7,10 @@
 	font-size: medium; 
 
 }
+
+#instructions {
+	text-align: center;
+}
 #image-container {
 	text-align: center;
 	margin: 0 auto;
