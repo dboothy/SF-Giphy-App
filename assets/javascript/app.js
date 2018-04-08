@@ -51,7 +51,7 @@ $(document).ready(function(){
 		console.log(movie)
 
 		// //base url + clicked button attribute value and api key and other paramater
-		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&limit=10" + apiKey;
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&limit=10" + "&api_key=Lk15PiiU3gyFxD2FrKFM48Q367ab4QwK";
 		console.log(queryURL)
 		$.ajax({
 		  url: queryURL,
