@@ -5,7 +5,7 @@ San Francisco Giphy App is an app game where users can click buttons
 ![Demo](assets/images/sfgifapp.gif)
 
 ## **Motivation**
-Learning how to call APIs and incorporate data into app.
+Learning how to call APIs and incorporate data into an app.
 
 
 ## **Libraries** 
@@ -21,6 +21,36 @@ Find the latest versions of jQuery and Bootstrap libraries
 
 Copy and paste the Bootstrap CSS CDN link within the `<head>` tags of an HTML document
 Copy and paste the Bootstrap JS CDN link and the minified jQuery JS CDN link above the `</body>` tag
+
+**Giphy API Key
+
+- Visit [Giphy for Developers](https://developers.giphy.com/docs/)
+
+- Sign up for a Giphy Account
+
+- Click "Create an App"
+
+- Input requested information "App Name" and "App Description" 
+
+- Click "Create App"
+
+- Allow the request to process and monitor account for an update on your API key request
+
+- Once API key is received, save a file called apikey.js and assign the key string to a variable in the document<br> ***example***<br> `var apiKey = "you_api_key_string"`
+
+- Link the file into your HTML document <br> 
+***example***<br>
+``` HTML
+<script type="text/javascript" src="assets/javascript/apikey.js"></script>
+```
+
+- Create a new file called ".gitignore" and save the variable the api key is assigned to
+
+- save this ".gitignore" file on the same folder level as the index file
+
+
+
+
 
 ## **Getting Started**
 In the HTML file, set up the elements needed for the app
