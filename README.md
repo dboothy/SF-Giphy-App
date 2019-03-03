@@ -87,31 +87,15 @@ $("#submit").on("click", function(){
 **Ajax Call to Giphy API**<br>
 ``` JavaScript
 $(document).on("click", ".movie", function(){
-/*empty image container upon each click of button to clear previous appendages */
 	$("#image-container").empty();
-
-	// console.log("i clicked a button");
-
-
-	//clicked buttons attribute value
 	var movie = $(this).attr('data-name');
-	console.log(movie)
-
-	// //base url + clicked button attribute value and api key and other paramater
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&limit=10" + "&api_key=";
-	console.log(queryURL)
 	$.ajax({
 	  url: queryURL,
 	  method: "GET"
-	// ajax call and response from giffy api
 	}).then(function(response) {
-		console.log(response.data)
-	// assign variable to the response of api object and delve into the data key
 		var arrayOfAllGifs = response.data;
-
-		//function call that renders results, pass in response array
 		appendGifs(arrayOfAllGifs)
-
 	});
 });
 
@@ -121,28 +105,17 @@ $(document).on("click", ".movie", function(){
 ``` JavaScript
 function appendGifs(arr){
 	for(var i=0; i < arr.length; i++ ){
-		//console.log(arr[i]);
 		var container = $("<div>");
-//create div iterating through array to places for images
 		container.addClass("image-wrapper")
-// add a class to the div
 		var image = $("<img>");
-// create an image tag to hold the images
 		image.attr("src", arr[i].images.fixed_width_still.url);
-// add src attribute to link images in the divs
 		image.attr("data-state", "still")
-// add attributes for the date states for when animation/still
 		image.attr("data-animate", arr[i].images.fixed_width.url)
 		image.attr("data-still", arr[i].images.fixed_width_still.url )
-// create a p tag for text		
 		var myRating = $("<p>");
-
 		myRating.addClass("label label-info")
-// add text to html including the data from response that holds the rating
 		myRating.text("Rating: " + arr[i].rating);
-// append response image holder and rating holder to the dom
 		$(container).append(image, myRating);
-// prepend image container so the response results list down
 		$("#image-container").prepend(container)
 	}
 }
