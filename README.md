@@ -48,7 +48,7 @@ Copy and paste the Bootstrap JS CDN link and the minified jQuery JS CDN link abo
 
 - save this ".gitignore" file on the same folder level as the index file
 
-
+![.gitignore](assets/images/gitignore.png)
 
 
 
