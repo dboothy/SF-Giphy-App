@@ -2,7 +2,7 @@
 
 San Francisco Giphy App is an app game where users can click buttons 
 
-![Demo](assets/images/sfgifapp.gif)
+![Demo](assets/images/trivia_game_display.gif)
 
 ## **Motivation**
 Learning how to call APIs and incorporate data into app.
@@ -89,7 +89,7 @@ $("#submit").on("click", function(){
 $(document).on("click", ".movie", function(){
 	$("#image-container").empty();
 	var movie = $(this).attr('data-name');
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&limit=10" + "&api_key-string;
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&limit=10" + "&api_key="";
 	$.ajax({
 	  url: queryURL,
 	  method: "GET"
