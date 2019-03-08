@@ -5,7 +5,7 @@ San Francisco Giphy App is an app that calls Giphy's API to display gifs of movi
 ![Demo](assets/images/sfgifapp.gif)
 
 ## **Motivation**
-Learning how to call APIs and incorporate data into an app.
+Call APIs and incorporate data into an app.
 
 
 ## **Libraries** 
