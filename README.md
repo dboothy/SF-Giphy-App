@@ -1,6 +1,6 @@
 # **San Francisco Giphy App**
 
-San Francisco Giphy App is an app game where users can click buttons 
+San Francisco Giphy App is an app that calls Giphy's API to display gifs of movies that take place in San Francisco.
 
 ![Demo](assets/images/sfgifapp.gif)
 
